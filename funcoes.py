@@ -23,3 +23,18 @@ def guardar_dado (dados_rolados, dados_guardados, índice):
 # print(guardar_dado(dados_rolados, dados_no_estoque, dado_para_guardar))
 
 
+def remover_dado(dados_rolados, dados_guardados, índice):
+    if índice < len(dados_guardados):
+        dado = dados_guardados[índice]
+        dados_rolados.append(dado)
+        dados_guardados = dados_guardados[:índice] + dados_guardados[índice+1:]
+
+    return [dados_rolados, dados_guardados]
+
+
+
+# dados_rolados = [2, 2, 2, 2]
+# dados_no_estoque = [1]
+# dado_para_remover = 0
+
+# print(remover_dado(dados_rolados, dados_no_estoque, dado_para_remover))
