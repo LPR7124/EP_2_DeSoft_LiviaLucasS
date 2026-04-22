@@ -82,3 +82,10 @@ def calcula_pontos_regra_simples (lista_int):
     return dic
 
 # print(calcula_pontos_regra_simples([2, 3, 4, 5, 2]))
+
+
+def calcula_pontos_soma(faces_roladas):
+    soma = 0
+    for face in faces_roladas:
+        soma += face
+    return soma
