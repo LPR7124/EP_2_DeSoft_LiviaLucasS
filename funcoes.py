@@ -91,17 +91,41 @@ def calcula_pontos_soma(faces_roladas):
     return soma
 
 
-def calcula_pontos_sequencia_baixa (faces_roladas):
-    eh_sequencia = False
-    for i in range(len(faces_roladas) - 1):
-        if faces_roladas[i+1] == faces_roladas[i] + 1:
-            eh_sequencia = True
-        else:   
-            eh_sequencia = False
-    if eh_sequencia:
+def calcula_pontos_sequencia_baixa(faces_roladas):
+    
+    if (1 in faces_roladas and
+        2 in faces_roladas and
+        3 in faces_roladas and
+        4 in faces_roladas):
         return 15
-    else:
-        return 0
+
+    if (2 in faces_roladas and
+        3 in faces_roladas and
+        4 in faces_roladas and
+        5 in faces_roladas):
+        return 15
+
+    if (3 in faces_roladas and
+        4 in faces_roladas and
+        5 in faces_roladas and
+        6 in faces_roladas):
+        return 15
+
+    return 0
+
+
+
+# def calcula_pontos_sequencia_baixa (faces_roladas):
+#     eh_sequencia = False
+#     for i in range(len(faces_roladas) - 1):
+#         if faces_roladas[i+1] == faces_roladas[i] + 1:
+#             eh_sequencia = True
+#         else:   
+#             eh_sequencia = False
+#     if eh_sequencia:
+#         return 15
+#     else:
+#         return 0
 
 
 # print(calcula_pontos_sequencia_baixa([2, 3, 4, 6, 2]))
