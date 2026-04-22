@@ -38,3 +38,47 @@ def remover_dado(dados_rolados, dados_guardados, índice):
 # dado_para_remover = 0
 
 # print(remover_dado(dados_rolados, dados_no_estoque, dado_para_remover))
+
+
+def calcula_pontos_regra_simples (lista_int):
+    dic = {}
+    for n in lista_int:
+
+        if n ==1 and 1 not in dic:
+            dic[1] = 1
+        elif n == 1 and 1 in dic:
+            dic[1] += 1
+
+
+        elif n == 2 and 2 not in dic:
+            dic[2] = 2
+        elif n == 2 and 2 in dic:
+            dic[2] += 2
+
+
+        elif n == 3 and 3 not in dic:
+            dic[3] = 3
+        elif n == 3 and 3 in dic:
+            dic[3] += 3
+
+
+        elif n == 4 and 4 not in dic:
+            dic[4] = 4
+        elif n == 4 and 4 in dic:
+            dic[4] += 4
+
+
+        elif n == 5 and 5 not in dic:
+            dic[5] = 5
+        elif n == 5 and 5 in dic:
+            dic[5] += 5
+
+
+        elif n == 6 and 6 not in dic:
+            dic[6] = 6
+        elif n == 6 and 6 in dic:
+            dic[6] += 6  
+
+    return dic
+
+# print(calcula_pontos_regra_simples([2, 3, 4, 5, 2]))
