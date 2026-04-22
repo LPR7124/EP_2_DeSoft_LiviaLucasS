@@ -81,4 +81,4 @@ def calcula_pontos_regra_simples (lista_int):
 
     return dic
 
-print(calcula_pontos_regra_simples([2, 3, 4, 5, 2]))
+# print(calcula_pontos_regra_simples([2, 3, 4, 5, 2]))
