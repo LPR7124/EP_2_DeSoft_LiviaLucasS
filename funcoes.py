@@ -41,7 +41,7 @@ def remover_dado(dados_rolados, dados_guardados, índice):
 
 
 def calcula_pontos_regra_simples (lista_int):
-    dic = {}
+    dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
     for n in lista_int:
 
         if n ==1 and 1 not in dic:
@@ -81,4 +81,4 @@ def calcula_pontos_regra_simples (lista_int):
 
     return dic
 
-# print(calcula_pontos_regra_simples([2, 3, 4, 5, 2]))
+print(calcula_pontos_regra_simples([2, 3, 4, 5, 2]))
