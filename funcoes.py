@@ -130,4 +130,78 @@ def calcula_pontos_sequencia_baixa(faces_roladas):
 
 # print(calcula_pontos_sequencia_baixa([2, 3, 4, 6, 2]))
 
-#teste
+# print(calcula_pontos_sequencia_baixa([2, 3, 4, 6, 2]))
+
+
+
+def calcula_pontos_sequencia_alta(faces_roladas):
+    if (1 in faces_roladas and
+        2 in faces_roladas and
+        3 in faces_roladas and
+        4 in faces_roladas and
+        5 in faces_roladas):
+        return 30
+    
+    if (2 in faces_roladas and
+        3 in faces_roladas and
+        4 in faces_roladas and
+        5 in faces_roladas and
+        6 in faces_roladas):
+        return 30
+    
+    return 0
+
+
+
+
+
+def calcula_pontos_full_house(faces_roladas):
+
+    dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+
+    for face in faces_roladas:
+        dic[face] += 1
+
+    tem_3 = False
+    tem_2 = False
+
+    for valor in dic:
+        if dic[valor] == 3:
+            tem_3 = True
+        if dic[valor] == 2:
+            tem_2 = True
+
+    if tem_3 and tem_2:
+        return calcula_pontos_soma(faces_roladas)
+    
+    return 0
+
+
+
+
+def calcula_pontos_quadra(faces_roladas):
+
+    dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+
+    for face in faces_roladas:
+        dic[face] += 1
+
+    for valor in dic:
+        if dic[valor] >= 4:
+            return calcula_pontos_soma(faces_roladas)
+
+    return 0
+
+
+
+def calcula_pontos_quina(faces_roladas):
+    dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+
+    for face in faces_roladas:
+        dic[face] += 1
+
+    for face in dic:
+        if dic[face] >= 5:
+            return 50
+
+    return 0
