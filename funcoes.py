@@ -199,3 +199,7 @@ def calcula_pontos_quina(faces_roladas):
             return 50
 
     return 0
+
+
+
+#teste
