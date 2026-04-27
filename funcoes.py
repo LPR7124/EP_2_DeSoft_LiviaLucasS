@@ -199,3 +199,9 @@ def calcula_pontos_quadra(faces_roladas):
 
     for face in faces_roladas:
         dic[face] += 1
+
+    for valor in dic:
+        if dic[valor] >= 5:
+            return 50
+
+    return 0
