@@ -172,3 +172,5 @@ def calcula_pontos_full_house(faces_roladas):
 
     if tem_3 and tem_2:
         return calcula_pontos_soma(faces_roladas)
+    
+    return 0
