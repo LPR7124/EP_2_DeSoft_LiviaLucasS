@@ -140,3 +140,12 @@ def calcula_pontos_sequencia_alta(faces_roladas):
         4 in faces_roladas and
         5 in faces_roladas):
         return 30
+    
+    if (2 in faces_roladas and
+        3 in faces_roladas and
+        4 in faces_roladas and
+        5 in faces_roladas and
+        6 in faces_roladas):
+        return 30
+    
+    return 0
