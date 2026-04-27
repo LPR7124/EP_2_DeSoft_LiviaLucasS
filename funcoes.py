@@ -174,3 +174,15 @@ def calcula_pontos_full_house(faces_roladas):
         return calcula_pontos_soma(faces_roladas)
     
     return 0
+
+
+
+
+def calcula_pontos_quadra(faces_roladas):
+
+    dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+
+    for face in faces_roladas:
+        dic[face] += 1
+
+    
