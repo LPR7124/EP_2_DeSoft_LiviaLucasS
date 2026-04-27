@@ -149,3 +149,17 @@ def calcula_pontos_sequencia_alta(faces_roladas):
         return 30
     
     return 0
+
+
+
+
+
+def calcula_pontos_full_house(faces_roladas):
+
+    dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+
+    for face in faces_roladas:
+        dic[face] += 1
+
+    tem_3 = False
+    tem_2 = False
