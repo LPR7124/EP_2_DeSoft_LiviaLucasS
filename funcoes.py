@@ -163,3 +163,12 @@ def calcula_pontos_full_house(faces_roladas):
 
     tem_3 = False
     tem_2 = False
+
+    for valor in dic:
+        if dic[valor] == 3:
+            tem_3 = True
+        if dic[valor] == 2:
+            tem_2 = True
+
+    if tem_3 and tem_2:
+        return calcula_pontos_soma(faces_roladas)
