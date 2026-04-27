@@ -129,3 +129,5 @@ def calcula_pontos_sequencia_baixa(faces_roladas):
 
 
 # print(calcula_pontos_sequencia_baixa([2, 3, 4, 6, 2]))
+
+#teste
