@@ -193,15 +193,14 @@ def calcula_pontos_quadra(faces_roladas):
 
 
 
-def calcula_pontos_quadra(faces_roladas):
-
+def calcula_pontos_quina(faces_roladas):
     dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
 
     for face in faces_roladas:
         dic[face] += 1
 
-    for valor in dic:
-        if dic[valor] >= 5:
+    for face in dic:
+        if dic[face] >= 5:
             return 50
 
     return 0
