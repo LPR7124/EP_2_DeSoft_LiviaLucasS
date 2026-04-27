@@ -129,3 +129,14 @@ def calcula_pontos_sequencia_baixa(faces_roladas):
 
 
 # print(calcula_pontos_sequencia_baixa([2, 3, 4, 6, 2]))
+
+
+
+
+def calcula_pontos_sequencia_alta(faces_roladas):
+    if (1 in faces_roladas and
+        2 in faces_roladas and
+        3 in faces_roladas and
+        4 in faces_roladas and
+        5 in faces_roladas):
+        return 30
