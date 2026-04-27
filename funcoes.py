@@ -185,4 +185,8 @@ def calcula_pontos_quadra(faces_roladas):
     for face in faces_roladas:
         dic[face] += 1
 
-    
+    for valor in dic:
+        if dic[valor] >= 4:
+            return calcula_pontos_soma(faces_roladas)
+
+    return 0
