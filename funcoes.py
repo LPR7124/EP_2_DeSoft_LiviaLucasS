@@ -203,3 +203,14 @@ def calcula_pontos_quina(faces_roladas):
 
 
 #teste
+
+def calcula_pontos_regra_avancada(faces_roladas):
+
+    return {
+        'cinco_iguais': calcula_pontos_quina(faces_roladas),
+        'full_house': calcula_pontos_full_house(faces_roladas),
+        'quadra': calcula_pontos_quadra(faces_roladas),
+        'sem_combinacao': calcula_pontos_soma(faces_roladas),
+        'sequencia_alta': calcula_pontos_sequencia_alta(faces_roladas),
+        'sequencia_baixa': calcula_pontos_sequencia_baixa(faces_roladas)
+    }
